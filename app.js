@@ -20,3 +20,11 @@ function mergeObjects(obj1, obj2) {
 function doubleAndReturnArgs(arr, ...nums){
     return [...arr, ...nums.map((num) => num *2)];
 }
+
+function removeRandom(items) {
+
+}
+
+function extend(array1, array2){
+    return [...array1, ...array2];
+}
