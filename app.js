@@ -32,3 +32,9 @@ function extend(array1, array2){
 function addKeyVal(obj, key, val) {
     return {...obj, [key]: val};
 }
+
+function removeKey(obj, key) {
+    let newObj = {...obj};
+    delete newObj[key];
+    return newObj;
+}
