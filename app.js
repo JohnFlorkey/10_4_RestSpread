@@ -16,3 +16,7 @@ function findMin(...nums) {
 function mergeObjects(obj1, obj2) {
     return {...obj1, ...obj2};
 }
+
+function doubleAndReturnArgs(arr, ...nums){
+    return [...arr, ...nums.map((num) => num *2)];
+}
