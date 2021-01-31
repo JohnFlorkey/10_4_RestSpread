@@ -28,3 +28,7 @@ function removeRandom(items) {
 function extend(array1, array2){
     return [...array1, ...array2];
 }
+
+function addKeyVal(obj, key, val) {
+    return {...obj, [key]: val};
+}
