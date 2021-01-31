@@ -38,3 +38,7 @@ function removeKey(obj, key) {
     delete newObj[key];
     return newObj;
 }
+
+function combine(obj1, obj2) {
+    return {...obj1, ...obj2};
+}
