@@ -22,7 +22,10 @@ function doubleAndReturnArgs(arr, ...nums){
 }
 
 function removeRandom(items) {
-
+    const rndIndex = Math.floor(Math.random() * (items.length - 0.001));
+    let newArr = [...items]
+    newArr.splice(rndIndex, 1);
+    return newArr;
 }
 
 function extend(array1, array2){
