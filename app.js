@@ -12,6 +12,8 @@ function myFilterOutOdds(...vals) {
 function findMin(...nums) {
     return nums.reduce((localMin, nextNum) => nextNum < localMin ? nextNum : localMin);
 }
+//solution
+const findMinSoln = (...nums) => Math.min(...nums);
 
 function mergeObjects(obj1, obj2) {
     return {...obj1, ...obj2};
@@ -22,7 +24,7 @@ function doubleAndReturnArgs(arr, ...nums){
 }
 
 function removeRandom(items) {
-    const rndIndex = Math.floor(Math.random() * (items.length - 0.001));
+    const rndIndex = Math.floor(Math.random() * (items.length - 0.001)); // I though random was inclusive of 1
     let newArr = [...items]
     newArr.splice(rndIndex, 1);
     return newArr;
